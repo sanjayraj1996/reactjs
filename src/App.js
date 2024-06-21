@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Functiondata from './components/functiondata'
+import Classdata from './components/classdata'
+import Childrendata from './components/childrendata'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1>React Application</h1>
+      <Functiondata name1="testdata" />
+      <Classdata name="classtest is passed"></Classdata>
+      <Childrendata>This is a children data is passed</Childrendata> 
+    </>
+  )
 }
 
-export default App;
+export default App
